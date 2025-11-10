@@ -20,6 +20,12 @@ jwt:
   secret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437
   expiration: 3600000  # 1 hour in milliseconds (3600000 = 1 hour)
 
+excel:
+  import:
+    file-path = file
+    sheet-name = sheet
+    header-row = 0
+
 logging:
   level:
     org.springframework: INFO

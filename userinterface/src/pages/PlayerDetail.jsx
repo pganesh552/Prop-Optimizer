@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getPlayerById } from "../api/playerApi";
 import { getPlayerProjection } from "../api/modelApi";
-import { PlayerContext } from "../context/PlayerContext";
+import { PlayerContext } from "../components/context/PlayerContext";
 
 const PlayerDetail = () => {
   const { id } = useParams();

@@ -3,7 +3,9 @@ package com.personal.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "player_stats")
+@Table(name = "player_stats", indexes = {
+        @Index(columnList = "id")
+})
 public class PlayerInfo {
 
     @Id
@@ -27,18 +29,18 @@ public class PlayerInfo {
     public String getTeam() {return team;}
     public void setTeam(String team) {this.team = team;}
 
-    public int getPoints() {return points;}
-    public void setPoints(int points) {this.points = points;}
+    public Integer getPoints() {return points;}
+    public void setPoints(Integer points) {this.points = points;}
 
-    public int getRebounds() {return rebounds;}
-    public void setRebounds(int rebounds) {this.rebounds = rebounds;}
+    public Integer getRebounds() {return rebounds;}
+    public void setRebounds(Integer rebounds) {this.rebounds = rebounds;}
 
-    public int getAssists() {return assists;}
-    public void setAssists(int assists) {this.assists = assists;}
+    public Integer getAssists() {return assists;}
+    public void setAssists(Integer assists) {this.assists = assists;}
 
-    public int getMinutes() {return minutes;}
-    public void setMinutes(int minutes) {this.minutes = minutes;}
+    public Integer getMinutes() {return minutes;}
+    public void setMinutes(Integer minutes) {this.minutes = minutes;}
 
-    public int getOffensivePossessions() {return offensivePossessions;}
-    public void setOffensivePossessions(int offensivePossessions) {this.offensivePossessions = offensivePossessions;}
+    public Integer getOffensivePossessions() {return offensivePossessions;}
+    public void setOffensivePossessions(Integer offensivePossessions) {this.offensivePossessions = offensivePossessions;}
 }
